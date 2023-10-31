@@ -1,0 +1,41 @@
+.Home {
+    height: 584px;
+
+}
+
+.HHome {
+    color: aliceblue;
+}
+
+.Button {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.934);
+}
+
+.text {
+    color: var(--White, #FFF);
+    padding-top: 100px;
+margin: 50px;
+    /* Body / Large */
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 27px */
+}
+
+.secsec{
+    width: 90%;
+
+
+    margin-left: 80px;
+    opacity: 90%;
+
+
+}
