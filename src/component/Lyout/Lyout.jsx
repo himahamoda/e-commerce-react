@@ -10,7 +10,10 @@ export default function layout() {
 
   return <>
     <Nav/>
-    <Outlet></Outlet>
-    <Footer/>
+    <Outlet>
+      
+    </Outlet>
+    
+    {/* <Footer/> */}
   </>
 }

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 
 :root {
-    --main-color: rgb(42, 37, 75);
+    --main-color: rgb(0, 0, 0);
     --light-color: #f0f3f2;
     --shadow: rgba(145, 158, 171, .2) 10px 2px 44px -1px, rgb(246, 246, 246) 0px 0px 2px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
     --font-family: 'Encode Sans Expanded', sans-serif;
@@ -13,6 +13,7 @@
 
 body {
     font-family: var(--font-family) !important;
+    width: 100%;
 
 }
 
@@ -31,7 +32,7 @@ body {
 
 a,
 a:hover {
-    color: black;
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
 }
 
@@ -75,8 +76,8 @@ a:hover {
     color: white;
 }
 .btn:hover{
-    background-color: #2A254B;
-    color: #f0f3f2;
+    background-color: #e4e4e4;
+    color: #000000;
 }
 
 .font-sm {
@@ -138,3 +139,66 @@ a:hover {
     font-weight: 200;
     line-height: 1.5rem;
 }
+
+/* Add this to your CSS file */
+
+/* Global styles */
+.row {
+    margin: 0;
+  }
+  
+  .col-md-4 {
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+  
+  /* Media queries for responsive design */
+  @media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .col-md-4 {
+      width: 100%;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .nav-item {
+      margin: 0 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Styles for tablets */
+    .col-md-4 {
+      width: 50%;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .nav-item {
+      margin: 0 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 993px) {
+    /* Styles for desktops */
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .nav-item {
+      margin: 0 10px;
+    }
+  }
